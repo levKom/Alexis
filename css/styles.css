@@ -1,4 +1,45 @@
-div {
-  background: red;
+body {
+  font-family: Poppins, sans-serif;
+  background: #ffffff;
+}
+
+body .container.header {
+  padding: 0;
+}
+
+body .container.header header {
+  margin: 0;
+}
+
+body .container.header header .logo {
+  font-family: Marck Script, cursive;
+  font-size: 35px;
+}
+
+body .container.header header .logo a {
+  text-decoration: none;
+  color: #616161;
+}
+
+body .container.header header .logo:first-letter {
+  color: #fc5f45;
+  padding-left: 5px;
+}
+
+body .container.header header .nav {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+body .container.header header .nav a {
+  color: #272727;
+}
+
+body .container.header header .nav a:hover {
+  color: #fc5f45;
+}
+
+body .container.header header .nav:last-child a {
+  padding-right: 0;
 }
 /*# sourceMappingURL=styles.css.map */
