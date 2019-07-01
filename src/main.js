@@ -37,6 +37,6 @@ customElements.define('about-us', AboutUs);
 
 const aboutUs = document.body.appendChild(document.createElement('about-us'));
 
-aboutUs.setAttribute('markup', '../chunks/aboutUs.html');
-aboutUs.setAttribute('styles', '../chunks/aboutUs.css');
+aboutUs.setAttribute('markup', 'chunks/aboutUs.html');
+aboutUs.setAttribute('styles', 'chunks/aboutUs.css');
 
