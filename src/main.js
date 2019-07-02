@@ -1,4 +1,4 @@
-class AboutUs extends HTMLElement {
+class WebComp extends HTMLElement {
   constructor() {
     super();
 
@@ -33,10 +33,27 @@ class AboutUs extends HTMLElement {
   }
 };
 
-customElements.define('about-us', AboutUs);
+customElements.define('web-comp', WebComp);
+const main = document.querySelector('main');
+const webComp = main.appendChild(document.createElement('web-comp'));
 
-const aboutUs = document.body.appendChild(document.createElement('about-us'));
+webComp.setAttribute('markup', 'chunks/about.html');
+// webComp.setAttribute('styles', 'chunks/about.css');
 
-aboutUs.setAttribute('markup', 'chunks/aboutUs.html');
-aboutUs.setAttribute('styles', 'chunks/aboutUs.css');
+function changeAttrs(event) {
+  event.preventDefault();
+  webComp.setAttribute(
+      'markup',
+      `chunks/${event.target.getAttribute('href')}.html`
+  );
+  /* webComp.setAttribute(
+      'styles',
+      `chunks/${event.target.getAttribute('href')}.css`
+  ); */
+}
+
+const items = document.querySelectorAll('.web-component');
+items.forEach((item) => {
+  item.addEventListener('click', changeAttrs);
+});
 
