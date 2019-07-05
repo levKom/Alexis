@@ -60,7 +60,7 @@ body footer .footer_block {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 1140px;
+  max-width: 1140px;
   background-color: rgba(38, 39, 50, 0.85);
   height: 225px;
   margin: 0 auto 40px;
@@ -71,7 +71,7 @@ body footer .footer_block {
 }
 
 body footer .footer_block .item {
-  width: 25%;
+  max-width: 25%;
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;

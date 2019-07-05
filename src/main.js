@@ -14,7 +14,7 @@ function changeAttrs(event) {
       `chunks/${event.target.getAttribute('href')}.html`
   );
   document.querySelectorAll('.nav-item a')
-      .forEach(elem => elem.classList.remove('active'));
+      .forEach((elem) => elem.classList.remove('active'));
 
   event.target.classList.add('active');
   // event.target.style.color = 'red';
