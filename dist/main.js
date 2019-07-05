@@ -1,3 +1,3 @@
-"use strict";
+'use strict';
 
-import "./web-comp.js";
+import './web-comp.js';
