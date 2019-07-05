@@ -36,3 +36,57 @@ body
           .nav-link.active
               color: #fc5f45
               border-bottom: 1px solid #fc5f45
+
+  footer
+    .footer_block
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 1140px
+      background-color: rgba(38, 39, 50, 0.85)
+      height: 225px
+      margin: 0 auto 40px
+      border-bottom: 3px solid
+      border-image: linear-gradient(to right, #fc5f45 25%, #38c695 25% 50%, #b27cf5 50% 75%, #feb960 75%) 1
+      .item
+        width: 25%
+        height: 100px
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        .text
+          width: 200px
+          color: #fef4f2
+          font-family: $poppins
+          font-size: 16px
+          font-weight: 400
+        .head
+          margin-bottom: 24px
+
+      .part-1.logo
+        font-family: $script
+        font-size: 50px
+        font-weight: 400
+
+        & a
+          text-decoration: none
+          color: #fef4f2
+          line-height: 100px
+          text-align: center
+          &:first-letter
+            color: #fc5f45
+            padding-left: 5px
+
+      .part-2
+        .head
+          color: #38c695
+
+      .part-3
+        .head
+          color: #b27cf5
+        
+      .part-4
+        .head
+          color: #feb960
+        .socials img
+          margin-right: 15px
