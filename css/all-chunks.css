@@ -2,11 +2,16 @@
   background: url("../img/grey-bg.jpg") no-repeat;
   background-size: cover;
   background-position: center;
-  height: 850px;
+  min-height: 775px;
 }
 
 .about-1 .icons {
   margin-top: 83px;
+  min-width: 750px;
+}
+
+.about-1 .icons-card {
+  padding-bottom: 50px;
 }
 
 .about-1 .icons .icon-1 {
@@ -29,7 +34,7 @@
 }
 
 .about-1 .main-text {
-  margin-top: 250px;
+  margin-top: 175px;
   margin-bottom: 49px;
 }
 
@@ -50,5 +55,75 @@
   border: none;
   border-radius: 25px;
   background-color: #fc5f45;
+}
+
+.about-2:hover .image_bg,
+.about-2:focus .image_bg {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.about-2 {
+  position: relative;
+  min-height: 1000px;
+  border-bottom: 1px solid #000;
+}
+
+.about-2 .image_block {
+  width: 555px;
+  height: 700px;
+  border: 10px solid rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.about-2 .image_block .image_bg {
+  height: 100%;
+  width: 100%;
+  background: url("../img/01-man.jpg") no-repeat center;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.about-2 .text_block {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  min-height: 550px;
+  max-width: 652px;
+  border-bottom: 3px solid;
+  -o-border-image: linear-gradient(to right, #fc5f45 25%, #38c695 25% 50%, #b27cf5 50% 75%, #feb960 75%) 1;
+     border-image: -webkit-gradient(linear, left top, right top, color-stop(25%, #fc5f45), color-stop(25%, #38c695), color-stop(50%, #b27cf5), color-stop(75%, #feb960)) 1;
+     border-image: linear-gradient(to right, #fc5f45 25%, #38c695 25% 50%, #b27cf5 50% 75%, #feb960 75%) 1;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  background: #fff;
+  margin-left: -67px;
+  margin-top: -275px;
+  z-index: 1;
+}
+
+.about-2 .text_block::before {
+  content: '01';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #e0e0e0;
+  font-size: 274px;
+  font-weight: 600;
+  line-height: 220px;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.about-2 .text_block .content {
+  padding: 94px 83px;
+}
+
+.about-2 .text_block .content h4 {
+  font-family: Libre Baskerville, serif;
+  font-size: 50px;
+  font-weight: 700;
+  z-index: 22;
+  color: #313131;
 }
 /*# sourceMappingURL=all-chunks.css.map */
