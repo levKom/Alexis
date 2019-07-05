@@ -71,7 +71,7 @@ body footer .footer_block {
 }
 
 body footer .footer_block .item {
-  max-width: 25%;
+  width: 25%;
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
