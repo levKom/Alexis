@@ -33,13 +33,20 @@ body .container.header header .nav {
 
 body .container.header header .nav a {
   color: #272727;
+  margin: 8px 16px;
+  padding: 0 0 2px;
 }
 
 body .container.header header .nav a:hover {
   color: #fc5f45;
 }
 
-body .container.header header .nav:last-child a {
-  padding-right: 0;
+body .container.header header .nav li:last-child a {
+  margin-right: 0;
+}
+
+body .container.header header .nav .nav-item .nav-link.active {
+  color: #fc5f45;
+  border-bottom: 1px solid #fc5f45;
 }
 /*# sourceMappingURL=styles.css.map */
