@@ -1,4 +1,4 @@
-class WebComp extends HTMLElement {
+class RegForm extends HTMLElement {
   constructor() {
     super();
 
@@ -19,9 +19,20 @@ class WebComp extends HTMLElement {
             : this.shadow.innerHTML.split('<style>')[1]
               .split('</style>')[0];
           this.shadow.innerHTML = `${response}<style>${styles}</style>`;
+          this.closeArea = this.shadow.querySelector('.reg_main_bg');
+          this.modalForm = this.shadow.querySelector('.reg-wrapper');
+
+          this.closeArea.onclick = function closePopUp() {
+            this.modalForm.style.display = 'none';
+            document.body.style.overflow = 'auto';
+          }.bind(this);
         }
       });
   }
 }
 
-customElements.define('web-comp', WebComp);
+// getData() {
+
+// }
+
+customElements.define('reg-form', RegForm);

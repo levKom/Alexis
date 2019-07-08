@@ -130,4 +130,37 @@ header .about {
   z-index: 22;
   color: #313131;
 }
+
+.reg-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.reg-wrapper .reg_main_bg {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  opacity: 0.8;
+  z-index: 10;
+}
+
+.reg-wrapper .reg_main_content {
+  max-width: 300px;
+  position: absolute;
+  top: 25%;
+  background: white;
+  opacity: 1;
+  z-index: 12;
+  display: block;
+  padding: 15px;
+}
 /*# sourceMappingURL=all-chunks.css.map */
