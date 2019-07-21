@@ -18,6 +18,7 @@
   <div class="reg-wrapper">
     <div class="reg_main_bg"></div>
     <div class="reg_main_content">
+      <span class="close-form">&#10008;</span>
       <form>
         <div>
           <div>
@@ -52,15 +53,18 @@
           </div>
         </div>
         <div>
-          <div>
-            <label for="avatar">Avatar</label>
+          <div class="avatar_wrapper">
+            <label for="avatar">Choose avatar</label>
           </div>
-          <div>
+          <div class="avatar_block">
             <input type="file" name="ava" id="avatar">
+            <div class="img-container">
+              <!-- Avatar will be set here as a background -->
+            </div>
           </div>
         </div>
       </form>
-      <button type="submit" class="form-button">Sign up</button>
+      <button type="submit" class="form-button" id="reg-btn">Sign up</button>
     </div>
   </div>
 </body>

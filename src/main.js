@@ -1,6 +1,5 @@
 import './web-comp.js';
 import './reg-form.js';
-import './form-validation.js';
 
 
 const main = document.querySelector('main');
