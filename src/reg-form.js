@@ -230,7 +230,7 @@ class RegForm extends HTMLElement {
           document.cookie = `pass=${response.passHash};`;
           document.cookie = `name=${response.name};`;
           this.form.innerHTML = `
-          <h5 style="color: #5fd552; text-align: center;">Регистрация прошла успешно!</h5>
+          <h5 style="color: #5fd552; text-align: center;">Registration successful!</h5>
           `;
           setTimeout(() => {
             this.modalForm.style.display = 'none';
