@@ -242,4 +242,23 @@ header .about {
 .reg-wrapper .reg_main_content button:hover {
   background-color: #bbdae8;
 }
+
+.contruction {
+  height: 66vh;
+}
+
+.contruction .unavailable {
+  text-align: center;
+  font-size: 40px;
+  color: #fc5f45;
+  line-height: 66vh;
+}
+
+@media (max-width: 960px) {
+  .contruction .unavailable {
+    font-size: 20px;
+    line-height: 33px;
+    margin-top: 30%;
+  }
+}
 /*# sourceMappingURL=all-chunks.css.map */
