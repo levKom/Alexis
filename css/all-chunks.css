@@ -213,13 +213,9 @@ header .about {
 }
 
 .reg-wrapper .reg_main_content .avatar_block .img-container {
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   background: url("");
-}
-
-.reg-wrapper .reg_main_content .avatar_wrapper {
-  max-width: 150px;
 }
 
 .reg-wrapper .reg_main_content .avatar_wrapper label {

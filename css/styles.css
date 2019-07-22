@@ -45,10 +45,6 @@ body .container.header header .nav a:hover {
   color: #fc5f45;
 }
 
-body .container.header header .nav li:last-child a {
-  margin-right: 0;
-}
-
 body .container.header header .nav .nav-item .nav-link.active {
   color: #fc5f45;
   border-bottom: 1px solid #fc5f45;
